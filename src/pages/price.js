@@ -7,7 +7,7 @@ const Price = (props) => {
   // Grabbing the Currency symbol from the URL Param
   const params = useParams();
   // Using the other two variables to create our URL
-  const url = `http://rest-sandbox.coinapi.io/v1/exchangerate/${params}/USD?apikey=${apiKey}`;
+  const url = `http://rest-sandbox.coinapi.io/v1/exchangerate/${params.symbol}/USD?apikey=${apiKey}`;
 
   //state to hold the coin data
   const [coin, setCoin] = React.useState("null");
